@@ -4,7 +4,7 @@ class Solution {
         var removedZeroCount = 0
         var transformationCount = 0
 
-        while(tempStr != "1") {
+        while (tempStr != "1") {
             val beforeLength = tempStr.length
             tempStr = tempStr.replace("0", "")
             val afterLength = tempStr.length
@@ -16,7 +16,6 @@ class Solution {
         return intArrayOf(transformationCount, removedZeroCount)
     }
 }
-
 
 fun main(args: Array<String>) {
     val solution = Solution()
